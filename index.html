@@ -14,7 +14,9 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
   <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="menu.css">
+
 </head>
 <body>
 
@@ -24,20 +26,22 @@
       <a href="#"><img src="img/tripcatch-logo.png" alt="tripcatch logo" class="tripcatch-logo"></a>
     </div>
     
-    <form action="#" method="get" class="search-form">
+    <form action="#" method="get">
       <div class="search-input-container">
         <input class="search-input" type="search" name="search" id="search" placeholder="Pesquisar">
-        <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar"></i></button>
+        <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar"></i>
+        </button>
       </div>
     </form>
     
     <ul class="header-list">
+      
       <li class="list-item">
         <span>BRL</span>
       </li>
       <li class="list-item">
         <div class="brazil-container">
-          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil">
+          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil" class="brazil-icon">
         </div>
       </li>
       <li class="list-item">
@@ -51,14 +55,13 @@
           <button class="header-button" onclick="">Entrar</button>
           <button class="header-button" onclick="">Cadastrar-se</button>
         </div>
-      </li>
-    </ul>
-
-    <div class="toggle-button">
-      <i class="fa-solid fa-bars"></i>
-    </div>
+      <li class="list-item">
+        <div class="toggle-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       
-  </header>
+    </ul>
+  </header> 
   
   <!-- Icons- -->
   <script src="https://kit.fontawesome.com/95ad5c7965.js" crossorigin="anonymous"></script>
