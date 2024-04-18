@@ -35,7 +35,46 @@
     </form>
     
     <ul class="header-list">
-      
+      <li class="list-item hideOnMobile">
+        <span>BRL</span>
+      </li>
+      <li class="list-item hideOnMobile">
+        <div class="brazil-container">
+          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil" class="brazil-icon">
+        </div>
+      </li>
+      <li class="list-item hideOnMobile">
+        <a href="#" class="link">
+          <i class='bx bxs-help-circle'></i>
+          <span>Ajuda</span>
+        </a>
+      </li>
+      <li class="list-item hideOnMobile">  
+          <button class="header-button" onclick="">Entrar</button>
+      <li class="list-item hideOnMobile">
+        <button class="header-button" onclick="">Cadastrar-se</button>
+      </li>
+      </li>
+      <li class="list-item">
+        <div onclick=showSidebar() class="toggle-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </li>  
+    </ul>
+
+    <ul class="sidebar-list js-sidebar">
+      <li class="list-item" onclick=hideSidebar()>
+        <i class="fa-solid fa-x"></i>
+      </li>
+      <li class="list-item">
+        <form action="#" method="get">
+          <div class="search-input-container sidebar-search-input-container">
+            <input class="search-input" type="search" name="search" id="search" placeholder="Pesquisar">
+            <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar"></i>
+            </button>
+          </div>
+        </form>
+      </li>
       <li class="list-item">
         <span>BRL</span>
       </li>
@@ -51,20 +90,25 @@
         </a>
       </li>
       <li class="list-item">
-        <div class="header-buttons-container">
-          <button class="header-button" onclick="">Entrar</button>
-          <button class="header-button" onclick="">Cadastrar-se</button>
-        </div>
-      <li class="list-item">
-        <div class="toggle-button">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      
+        <a href="#">Login</a>
+      </li>
     </ul>
+
   </header> 
   
   <!-- Icons- -->
   <script src="https://kit.fontawesome.com/95ad5c7965.js" crossorigin="anonymous"></script>
+
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.js-sidebar');
+      sidebar.style.display = 'flex';
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('.js-sidebar');
+      sidebar.style.display = 'none';
+    }
+  </script>
 </body>
 </html>
 
