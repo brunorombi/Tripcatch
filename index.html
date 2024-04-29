@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tripcatch.com</title>
-
-  <!-- Google Fonts - Roboto -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
 
   <!-- Boxicons CSS -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
   <!-- CSS -->
   <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="menu.css">
-
+  <link rel="stylesheet" href="hero.css">
 </head>
 <body>
+
+  <!-- Header -->
 
   <header class="header">
 
@@ -26,13 +26,13 @@
       <a href="#"><img src="img/tripcatch-logo.png" alt="tripcatch logo" class="tripcatch-logo"></a>
     </div>
     
-    <form action="#" method="get">
+    <!-- <form action="#" method="get">
       <div class="search-input-container">
         <input class="search-input" type="search" name="search" id="search" placeholder="Pesquisar">
         <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar"></i>
         </button>
       </div>
-    </form>
+    </form> -->
     
     <ul class="header-list">
       <li class="list-item hideOnMobile">
@@ -94,21 +94,33 @@
       </li>
     </ul>
 
-  </header> 
+  </header>   
   
+<!-- Hero Section -->
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-text-container">
+        <h1>Afim de uma aventura diferente?</h1>
+        <h2>Desfrute de uma escapada relaxante durante o período de 25 de maio a 30 de setembro de 2024</h2>
+      </div>
+      <div class="searchbox-container">
+        <form class="form-container" action="#" method="get">
+          <input type="text">
+          <input type="date">
+          <input type="date">
+          <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar">Pesquisar</i>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
   <!-- Icons- -->
   <script src="https://kit.fontawesome.com/95ad5c7965.js" crossorigin="anonymous"></script>
 
-  <script>
-    function showSidebar() {
-      const sidebar = document.querySelector('.js-sidebar');
-      sidebar.style.display = 'flex';
-    }
-    function hideSidebar() {
-      const sidebar = document.querySelector('.js-sidebar');
-      sidebar.style.display = 'none';
-    }
-  </script>
+  <!-- Script includes -->
+  <script src="sidebar.js"></script>
 </body>
 </html>
 

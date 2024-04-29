@@ -1,0 +1,60 @@
+:root {
+  --purple-color: #270949;
+  --black-color: #1a1a1a;
+  --gray-color: 	#f4f4f4;
+  --white-color: #fff;
+  --titulo-: "Varela Round", sans-serif;
+  --subtitulo-: "Roboto", sans-serif;
+}
+
+.hero-section {
+  background-image: url('img/praia.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 605px; 
+  width: 100%;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.hero-section .hero-text-container {
+  position: absolute;
+  left: 24%;
+  top: 15%;
+}
+
+.hero-text-container h1 {
+  font-family: var(--titulo-);
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.hero-text-container h2 {
+  font-family: var(--subtitulo-);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hero-section .searchbox-container {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--titulo-);
+  background-color: rgb(255, 183, 0);
+  box-shadow: rgba(26, 26, 26, 0.16) 0px 2px 8px 0px;
+  padding: 4px;
+}
+
+#search-icon {
+  color: var(--white-color);
+  position: absolute;
+  border: none;
+  background-color: var(--purple-color);
+  cursor: pointer;
+}
+
