@@ -1,18 +1,19 @@
 :root {
   --purple-color: #270949;
   --black-color: #1a1a1a;
-  --gray-color: 	#f4f4f4;
+  --gray-color: #f4f4f4;
   --white-color: #fff;
-  --titulo-: "Varela Round", sans-serif;
-  --subtitulo-: "Roboto", sans-serif;
+  --titulo-font: "Varela Round", sans-serif;
+  --subtitulo-font: "Roboto", sans-serif;
 }
 
 .hero-section {
   background-image: url('img/praia.jpg');
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 605px; 
+  height: 605px;
   width: 100%;
   color: var(--white-color);
   display: flex;
@@ -22,7 +23,6 @@
   position: relative;
 }
 
-
 .hero-section .hero-text-container {
   position: absolute;
   left: 24%;
@@ -30,13 +30,13 @@
 }
 
 .hero-text-container h1 {
-  font-family: var(--titulo-);
+  font-family: var(--titulo-font);
   font-size: 64px;
   font-weight: 800;
 }
 
 .hero-text-container h2 {
-  font-family: var(--subtitulo-);
+  font-family: var(--subtitulo-font);
   font-size: 20px;
   font-weight: 400;
 }
@@ -44,17 +44,104 @@
 .hero-section .searchbox-container {
   display: flex;
   flex-direction: row;
-  font-family: var(--titulo-);
   background-color: rgb(255, 183, 0);
-  box-shadow: rgba(26, 26, 26, 0.16) 0px 2px 8px 0px;
-  padding: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-#search-icon {
-  color: var(--white-color);
-  position: absolute;
-  border: none;
-  background-color: var(--purple-color);
+.form-container input,
+.form-container button {
+  color: var(--black-color);
   cursor: pointer;
+  width: 280px;
+  height: 52px;
+  margin-right: 2px;
+  border-radius: 30px;
+  border: none;
+}
+
+.form-container button {
+  width: 160px;
+  margin: 0;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+}
+
+.searchbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1035px;
+  height: 65px;
+  border-radius: 56px;
+  position: absolute;
+  bottom: 27%;
+}
+
+.searchbox-container .form-container {
+  font-family: var(--titulo-font);
+  color: var(--gray-color);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.form-container .input-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  color: var(--gray-color);
+  left: 10px;
+}
+
+.hero-section .promotion-text {
+  position: absolute;
+  bottom: 23%;
+  left: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promotion-text i {
+  margin-right: 3px;
+}
+
+.promotion-text h2 a {
+  color: #0000FF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-container .date-container input:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-container .date-container input:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-with-icon.plane {
+  position: relative;
+}
+
+.plane i {
+  position: absolute;
+  color: black;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.plane-input {
+  padding-left: 35px;
 }
 
