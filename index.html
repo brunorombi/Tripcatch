@@ -17,13 +17,12 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="hero.css">
   <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="recent.css">
 </head>
 <body>
 
   <!-- Header -->
-
   <header class="header">
-
     <div class="logo-container">
       <a href="#"><img src="img/tripcatch-logo.png" alt="tripcatch logo" class="tripcatch-logo"></a>
     </div>
@@ -42,7 +41,7 @@
       </li>
       <li class="list-item hideOnMobile">
         <div class="brazil-container">
-          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil" class="brazil-icon">
+          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil">
         </div>
       </li>
       <li class="list-item hideOnMobile">
@@ -53,9 +52,9 @@
       </li>
       <li class="list-item hideOnMobile">  
           <button class="header-button" onclick="">Entrar</button>
+      </li>
       <li class="list-item hideOnMobile">
         <button class="header-button" onclick="">Cadastrar-se</button>
-      </li>
       </li>
       <li class="list-item">
         <div onclick=showSidebar() class="toggle-button">
@@ -72,8 +71,7 @@
         <form action="#" method="get">
           <div class="search-input-container sidebar-search-input-container">
             <input class="search-input" type="search" name="search" id="search" placeholder="Pesquisar">
-            <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar"></i>
-            </button>
+            <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar"></i></button>
           </div>
         </form>
       </li>
@@ -82,7 +80,7 @@
       </li>
       <li class="list-item">
         <div class="brazil-container">
-          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil" class="brazil-icon">
+          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil">
         </div>
       </li>
       <li class="list-item">
@@ -95,47 +93,58 @@
         <a href="#">Login</a>
       </li>
     </ul>
-
   </header>   
   
-<!-- Hero Section -->
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-text-container">
+      <h1>Afim de uma<br> aventura diferente?</h1>
+      <h2>Desfrute de uma escapada relaxante <br>durante o período de 25 de maio a <br>30 de setembro de 2024</h2>
+    </div>
+    <div class="searchbox-container">
+      <form class="form-container" action="#" method="get">
+        <div class="input-with-icon plane">
+          <i class="fas fa-plane input-icon"></i>
+          <input type="text" placeholder="Para onde você vai?" class="plane-input">
+        </div>
+        <div class="input-with-icon date-container">
+          <input type="date">
+          <input type="date">
+        </div>
+        <button class="header-button" type="submit">Pesquisar</button>
+      </form>
+    </div>
+    <div class="promotion-text">
+      <i class="fa-regular fa-envelope"></i>
+      <h2>Cadastre seu email para ter acesso as promoções <a href="#">aqui</a></h2>
+    </div>
+  </section>
 
-  
-    <section class="hero-section">
-      <div class="hero-text-container">
-        <h1>Afim de uma<br> aventura diferente?</h1>
-        <h2>Desfrute de uma escapada relaxante <br>durante o período de 25 de maio a <br>30 de setembro de 2024</h2>
-      </div>
-      <div class="searchbox-container">
-        <form class="form-container" action="#" method="get">
-          <div class="input-with-icon plane">
-            <i class="fas fa-plane input-icon"></i>
-            <input type="text" placeholder="Para onde você vai?" class="plane-input">
+  <main>
+    <section class="recent-activity">
+      <h1 class="title">Recentemente você buscou</h1>
+      <div class="recent-card">
+        <img src="https://media.staticontent.com/media/pictures/0e8c9c0b-4a6e-4ba2-b972-4a5d9ad6e1cb/286x200" alt="Imagem de Roma">
+        <div class="recent-content">
+          <h3>Voos de ida e volta</h3>
+          <h1>Roma</h1>
+          <h2>De São Paulo</h2>
+          <div class>
+            <span>Continuar procurando<i class='bx bx-chevron-right'></i></span>    
           </div>
-          <div class="input-with-icon date-container">
-            <input type="date">
-            <input type="date">
-          </div>
-          <button class="header-button" type="submit">Pesquisar</button>
-        </form>
-      </div>
-      <div class="promotion-text">
-        <i class="fa-regular fa-envelope"></i>
-        <h2>Cadastre seu email para ter acesso as promoções <a href="#">aqui</a></h2>
+        </div>
       </div>
     </section>
 
-  <main>
-  
     <section>
-      <div class="card-title">
+      <div class="card-info">
         <h1 class="title">Fique em uma acomodação exclusiva</h1>
         <h2 class="subtitle">Castelo, villas, barcos...</h2> 
       </div>
 
       <div class="card-container">
         <div class="card">
-          <img src="card-images/ada-verde.webp" alt="">
+          <img src="card-images/ada-verde.webp" alt="Imagem Rio dos Cedros">
           <div class="card-content">
             <h3>Ada Verde</h3>
             <h4>Brasil, Rio dos Cedros</h4>
@@ -149,7 +158,7 @@
         </div>
 
         <div class="card">
-          <img src="card-images/wochenbrunner-chalets.webp" alt="">
+          <img src="card-images/wochenbrunner-chalets.webp" alt="Imagem Chalé Austria">
           <div class="card-content">
             <h3>Wochenbrunner Chalets</h3>
             <h4>Áustria, Ellmau</h4>
@@ -163,7 +172,7 @@
         </div>
 
         <div class="card">
-          <img src="card-images/hoton-sporthotel.webp" alt="">
+          <img src="card-images/hoton-sporthotel.webp" alt="Sporthotel na Bélgica">
           <div class="card-content">
             <h3>Hotond Sporthotel</h3>
             <h4>Bélgica, Kluisbergen</h4>
@@ -180,7 +189,7 @@
           <img src="card-images/la-marquesa.webp" alt="">
           <div class="card-content">
             <h3>Casa Rural La Marquesa - Cuenca</h3>
-            <h4>Brasil, Rio dos Cedros</h4>
+            <h4>Espanha, Valera de Abajo</h4>
             <p>Excepcional <span> &#183; 62 avaliações</span></p>
             <i class='bx bxs-star'></i>
             <i class='bx bxs-star'></i>
@@ -189,25 +198,11 @@
             <i class='bx bx-star'></i>
           </div>
         </div>
-
-        </div>
       </div>
-
-      <section>
-        
-      </section>
-  </main>
-
-
-
     </section>
+  </main>
 
   <!-- Script includes -->
   <script src="sidebar.js"></script>
 </body>
 </html>
-
-
-
-
-  

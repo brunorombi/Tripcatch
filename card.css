@@ -1,3 +1,17 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 50px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .title {
   font-weight: 700;
   font-size: 28px;
@@ -10,17 +24,11 @@
   opacity: 0.9;
 }
 
-.card-title {
+.card-info {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 15px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  margin-left: 10px;
 }
 
 .card-container {
@@ -36,7 +44,7 @@ main {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 20px;
+  margin: 17px;
   cursor: pointer;
   transition: ease 0.125s;
 }
