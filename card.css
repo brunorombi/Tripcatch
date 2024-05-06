@@ -1,0 +1,89 @@
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  width: 300px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  cursor: pointer;
+  transition: ease 0.125s;
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.card-content h3 {
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card-content h4 {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(89, 89, 89);
+}
+
+.card-content p
+.card-content span {
+  color: rgb(26, 26, 26);
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.card-content span {
+  color: rgb(89, 89, 89);
+}
+
+.card-content i {
+  color: #270949;
+}
+
+.card-container .card:hover {
+  opacity: 0.8;
+}
+
+.card-container .card:active {
+  opacity: 0.6;
+}
