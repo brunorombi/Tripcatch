@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 720px;
+  height: 860px;
   width: 100%;
   color: var(--white-color);
   display: flex;
@@ -72,7 +72,7 @@
   height: 65px;
   border-radius: 56px;
   position: absolute;
-  bottom: 27%;
+  bottom: 40%;
 }
 
 .searchbox-container .form-container {
@@ -100,7 +100,7 @@
 
 .hero-section .promotion-text {
   position: absolute;
-  bottom: 23%;
+  bottom: 35%;
   left: 25%;
   display: flex;
   align-items: center;
