@@ -4,9 +4,6 @@
 
 .small-card-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  
 }
 
 .small-card-container .small-card {
@@ -34,4 +31,10 @@
 
 .small-card-container .small-card:active {
   opacity: 0.6;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 200px;
 }

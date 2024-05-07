@@ -7,14 +7,12 @@
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: ease 1.125s;
-  margin-bottom: 40px;
-  margin-left: 10px;
+  transition: ease 0.125s;
+  margin-bottom: 40px;  
 }
 
 .recent-activity .title {
   margin-bottom: 15px;
-  margin-left: 10px;
 }
 
 .recent-card .recent-content {
@@ -63,11 +61,11 @@
   transform: translateY(-50%);
 }
 
-.recent-activity:hover {
+.recent-card:hover {
   opacity: 0.8;
   transition: ease 0.125s;
 }
 
-.recent-activity:active {
+.recent-card:active {
   opacity: 0.6;
 }
