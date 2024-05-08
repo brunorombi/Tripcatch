@@ -1,7 +1,7 @@
 .recent-activity .recent-card {
   display: flex;
   align-items: top;
-  width: 700px;
+  width: 630px;
   overflow: hidden;
   background-color: #f0f0f0;
   border-radius: 8px;
@@ -68,4 +68,18 @@
 
 .recent-card:active {
   opacity: 0.6;
+}
+
+.recent-activity {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.recent-card:first-child {
+  margin-right: 35px;
 }

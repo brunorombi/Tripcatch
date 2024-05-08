@@ -1,0 +1,59 @@
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+}
+
+.content-table thead tr {
+  background-color: #574366;
+  color: #fff;
+  text-align: left;
+}
+
+.content-table th,
+.content-table td {
+  padding: 15px 25px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  cursor: pointer;
+  transition: ease 0.125s;
+}
+
+.content-table tbody tr:nth-child(even) {
+  background-color: #0000000b;
+  font-weight: 700;
+  color: #574366;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #574366;
+}
+
+
+.content-table tbody tr .confirmed {
+  color: #32de84;
+  font-weight: 700;
+}
+
+.content-table tbody tr .pending {
+  color: #ebc474;
+  font-weight: 700;
+}
+.content-table tbody tr .cancelled {
+  color: #b30021;
+  font-weight: 700;
+}
+
+#footer {
+  width: 100%;
+}
+
+.content-table tbody tr:hover {
+  opacity: 0.6;
+}

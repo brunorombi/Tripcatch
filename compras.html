@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suas passagens</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+  
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/95ad5c7965.js" crossorigin="anonymous"></script>
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="recent.css">
+    <link rel="stylesheet" href="small-card.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="footer-compras.css">
+  </head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html"><img src="img/tripcatch-logo.png" alt="tripcatch logo" class="tripcatch-logo"></a>
+    </div>
+    
+    <!-- <form action="#" method="get">
+      <div class="search-input-container">
+        <input class="search-input" type="search" name="search" id="search" placeholder="Pesquisar">
+        <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar"></i>
+        </button>
+      </div>
+    </form> -->
+    
+    <ul class="header-list">
+      <li class="list-item hideOnMobile">
+        <span>BRL</span>
+      </li>
+      <li class="list-item hideOnMobile">
+        <div class="brazil-container">
+          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil">
+        </div>
+      </li>
+      <li class="list-item hideOnMobile">
+        <a href="#" class="link">
+          <i class='bx bxs-help-circle'></i>
+          <span>Ajuda</span>
+        </a>
+      </li>
+      <li class="list-item hideOnMobile">  
+        <a href="#">Entrar</a>
+      </li>
+      <li class="list-item hideOnMobile">
+        <a href="compras.html">Suas passagens</a>
+      </li>
+      <li class="list-item">
+        <div onclick=showSidebar() class="toggle-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </li>  
+    </ul>
+
+    <ul class="sidebar-list js-sidebar">
+      <li class="list-item" onclick=hideSidebar()>
+        <i class="fa-solid fa-x"></i>
+      </li>
+      <li class="list-item">
+        <form action="#" method="get">
+          <div class="search-input-container sidebar-search-input-container">
+            <input class="search-input" type="search" name="search" id="search" placeholder="Pesquisar">
+            <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar"></i></button>
+          </div>
+        </form>
+      </li>
+      <li class="list-item">
+        <span>BRL</span>
+      </li>
+      <li class="list-item">
+        <div class="brazil-container">
+          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil">
+        </div>
+      </li>
+      <li class="list-item">
+        <a href="#" class="link">
+          <i class='bx bxs-help-circle'></i>
+          <span>Ajuda</span>
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="#">Entrar</a>
+      </li>
+      <li class="list-item">
+        <a href="compras.html">Suas passagens</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <h1>Suas passagens</h1>
+    <table class="content-table">
+      <thead>
+        <th>Data</th>
+        <th>Origem</th>
+        <th>Destino</th>
+        <th>Número do Voo</th>
+        <th>Status</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>25/06/2024</td>
+          <td>São Paulo</td>
+          <td>Rio de Janeiro</td>
+          <td>AA123</td>
+          <td class="confirmed">Confirmado</td>
+        </tr>
+        <tr>
+          <td>30/06/2024</td>
+          <td>Londres</td>
+          <td>Paris</td>
+          <td>BA456</td>
+          <td class="pending">Pendente</td>
+        </tr>
+        <tr>
+          <td>10/07/2024</td>
+          <td>Nova York</td>
+          <td>Los Angeles</td>
+          <td>DL789</td>
+          <td class="confirmed">Confirmado</td>
+        </tr>
+        <tr>
+          <td>15/07/2024</td>
+          <td>Tóquio</td>
+          <td>Pequim</td>
+          <td>NH012</td>
+          <td class="cancelled">Cancelado</td>
+        </tr>
+        <tr>
+          <td>20/07/2024</td>
+          <td>Sydney</td>
+          <td>Melbourne</td>
+          <td>QF345</td>
+          <td class="confirmed">Confirmado</td>
+        </tr>
+        <tr>
+          <td>25/07/2024</td>
+          <td>Paris</td>
+          <td>Roma</td>
+          <td>AF678</td>
+          <td class="confirmed">Confirmado</td>
+        </tr>
+        <tr>
+          <td>30/07/2024</td>
+          <td>Pequim</td>
+          <td>Xangai</td>
+          <td>CZ901</td>
+          <td class="cancelled">Cancelado</td>
+        </tr>
+      </tbody>
+      
+    </table>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-email-subscription">
+      <div class="text-container">
+        <h2 class="title">Fique por dentro!</h2>
+        <h3 class="subtitle">Cadastre-se para receber e-mails de marketing da Tripcatch.com, incluindo promoções, recompensas, experiências de viagem</h3>
+        <h3 class="subtitle">e informações sobre os produtos e serviços da Tripcatch.com</h3>
+      </div>
+      <div>
+        <div class="footer-form" >
+          <input type="email" id="email-input" placeholder="Seu e-mail:">
+          <button id="openModal" >Inscreva-se</button>
+        </div>
+        <div class="modal" id="modal">
+          <div class="modal-inner">
+            <h2>Inscrição realizada!</h2>
+            <div class="modal-gif" style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/PijzuUzUhm7hcWinGn" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            <button id="closeModal">Fechar</button>
+          </div>
+          
+        </div>
+        <h3 class="last-subtitle">Você pode cancelar sua inscrição a qualquer momento. Confira a nossa <a href="#">política de privacidade</a>.</h3>
+      </div>
+    </div>
+    <div class="info">
+      &#169; 2024 Tripcatch - Bruno Rombi - 0020482413080
+    </div>
+  </footer>
+
+
+  <!-- Script includes -->
+  <script src="sidebar.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
