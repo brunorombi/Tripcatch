@@ -1,0 +1,9 @@
+marquee {
+  padding: 20px 0px;
+}
+
+marquee img {
+  width: 150px;
+  margin-right: 80px;
+  cursor: pointer;
+}
