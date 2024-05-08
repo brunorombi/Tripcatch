@@ -42,6 +42,7 @@
 
 .footer-form button {
   padding: 10px 20px;
+  white-space: nowrap;
   background-color: #574366;
   color: #fff;
   border: none;
