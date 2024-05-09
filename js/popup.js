@@ -20,16 +20,16 @@ function setupModal() {
       closeModal();
     }
   });
+
+  function openModal() {
+    modal.classList.add("open");
+  }
+
+  function closeModal() {
+    modal.classList.remove("open");
+    input.value = "";
+  }
 }
 
-
-function openModal() {
-  modal.classList.add("open");
-}
-
-function closeModal() {
-  modal.classList.remove("open");
-  input.value = "";
-}
 
 setupModal();
