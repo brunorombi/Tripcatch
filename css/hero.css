@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .hero-section .hero-content {
@@ -141,40 +142,39 @@
   padding-left: 35px;
 }
 
+
 @media (max-width: 813px) {
-  .hero-section .form-container {
-    flex-direction: column;
-  }
-  .form-container .date-container {
-    flex-direction: column;
-  }
-  .date-container input,
-  .form-container button  {
-    width: 100%;
-    padding: 0px 50px;
-  }
-  .form-container button {
-    padding: 0 50px;
-  }
-  .form-container .date-container input:first-child {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-  .form-container .date-container input:last-child {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  marquee {
-    display: none;
-  }
-  body {
+  .searchbox-container {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .form-container .input-with-icon {
+    margin-bottom: 4px;
+  }
+
+  .searchbox-container .form-container,
+  .form-container .date-container{
     flex-direction: column;
   }
-  #main {
-    text-align: left;
-    margin-left: 50px;
+
+  .form-container .date-container input:first-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 4px;
+  }
+  
+  .form-container .date-container input:last-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 2px;
+  }
+
+  .form-container input,
+  .date-container input,
+  .searchbox-container button {
+    margin: 0;
+    width: 400px;
   }
 }

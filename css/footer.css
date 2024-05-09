@@ -69,5 +69,7 @@ footer .info {
 }
 
 #footer {
+  margin-top: 100px;
   text-align: center;
+  width: 100%;
 }

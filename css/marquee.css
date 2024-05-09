@@ -13,3 +13,9 @@ marquee img {
 marquee img:last-child {
   margin-right: 20px;
 }
+
+@media (max-width: 813px) {
+  marquee {
+    display: none;
+  }
+}
