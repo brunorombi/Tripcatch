@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tripcatch.com</title>
+  <title>Tripcatch</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,39 +14,31 @@
   <script src="https://kit.fontawesome.com/95ad5c7965.js" crossorigin="anonymous"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="hero.css">
-  <link rel="stylesheet" href="card.css">
-  <link rel="stylesheet" href="recent.css">
-  <link rel="stylesheet" href="small-card.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="popup.css">
-  <link rel="stylesheet" href="marquee.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/hero.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/recent.css">
+  <link rel="stylesheet" href="../css/small-card.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/popup.css">
+  <link rel="stylesheet" href="../css/marquee.css">
 
 </head>
 <body>
-
   <!-- Header -->
   <header class="header">
     <div class="logo-container">
-      <a href="#"><img src="img/tripcatch-logo.png" alt="tripcatch logo" class="tripcatch-logo"></a>
+      <a href="index.html"><img src="../images/main/tripcatch-logo.png" alt="tripcatch logo" class="tripcatch-logo"></a>
     </div>
     
-    <!-- <form action="#" method="get">
-      <div class="search-input-container">
-        <input class="search-input" type="search" name="search" id="search" placeholder="Pesquisar">
-        <button id="search-icon" type="submit"><i class='bx bx-search' alt="botão de pesquisar"></i>
-        </button>
-      </div>
-    </form> -->
-    
+  
     <ul class="header-list">
       <li class="list-item hideOnMobile">
         <span>BRL</span>
       </li>
       <li class="list-item hideOnMobile">
         <div class="brazil-container">
-          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil">
+          <img src="../images/main/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil">
         </div>
       </li>
       <li class="list-item hideOnMobile">
@@ -55,8 +47,10 @@
           <span>Ajuda</span>
         </a>
       </li>
-      <li class="list-item hideOnMobile">  
-        <a href="#">Entrar</a>
+      <li class="list-item hideOnMobile">
+        <div class="profile-picture-container">
+          <a href="Profile Card/index.html" target="_blank"><img class="profile-picture" src="../images/main/profile-picture.jpg"></a>
+        </div>
       </li>
       <li class="list-item hideOnMobile">
         <a href="compras.html">Suas passagens</a>
@@ -77,7 +71,7 @@
       </li>
       <li class="list-item">
         <div class="brazil-container">
-          <img src="img/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil">
+          <img src="../images/main/Flag-of-Brazil-01-1-150x150.png" class="brazil-icon" alt="Bandeira do Brasil">
         </div>
       </li>
       <li class="list-item">
@@ -87,39 +81,44 @@
         </a>
       </li>
       <li class="list-item">
-        <a href="#">Entrar</a>
+        <div class="profile-picture-container">
+          <a href="Profile Card/index.html" target="_blank"><img class="profile-picture" src="../images/main/profile-picture.jpg"></a>
+        </div>
       </li>
       <li class="list-item">
         <a href="compras.html">Suas passagens</a>
       </li>
     </ul>
-    
   </header>   
   
   <!-- Hero Section -->
   <section class="hero-section">
-    <div class="hero-text-container">
-      <h1>Afim de uma<br> aventura diferente?</h1>
-      <h2>Desfrute de uma escapada relaxante <br>durante o período de 25 de maio a <br>30 de setembro de 2024</h2>
-    </div>
-    <div class="searchbox-container">
-      <form class="form-container" action="#" method="get">
-        <div class="input-with-icon plane">
-          <i class="fas fa-plane input-icon"></i>
-          <input type="text" placeholder="Para onde você vai?" class="plane-input">
-        </div>
-        <div class="input-with-icon date-container">
-          <input type="date">
-          <input type="date">
-        </div>
-        <button class="header-button" type="submit">Pesquisar</button>
-      </form>
-    </div>
-    <div class="promotion-text">
-      <i class="fa-regular fa-envelope"></i>
-      <h2>Cadastre seu email para ter acesso as promoções <a href="#footer">aqui</a></h2>
+    <div class="hero-content">
+      <div class="hero-text-container">
+        <h1>Afim de uma<br> aventura diferente?</h1>
+        <h2>Desfrute de uma escapada relaxante <br>durante o período de 25 de maio a <br>30 de setembro de 2024</h2>
+      </div>
+      <div class="searchbox-container">
+        <form class="form-container" action="" method="get">
+          <div class="input-with-icon plane">
+            <i class="fas fa-plane input-icon"></i>
+            <input type="text" placeholder="Para onde você vai?" class="plane-input">
+          </div>
+          <div class="input-with-icon date-container">
+            <input type="date">
+            <input type="date">
+          </div>
+          <button class="header-button" type="submit">Pesquisar</button>
+        </form>
+      </div>
+      <div class="promotion-text">
+        <i class="fa-regular fa-envelope"></i>
+        <h2>Cadastre seu email para ter acesso as promoções <a href="#footer">aqui</a></h2>
+      </div>
     </div>
   </section>
+
+  <!-- Marquee Section -->
   <section>
     <marquee behavior="slide" direction="right" scrolldelay="35" truespeed>
       <img src="https://logospng.org/download/latam/logo-latam-256.png"> 
@@ -134,8 +133,8 @@
   </section>
   
 
-
-  <main>
+  <!-- Main -->
+  <main id="main">
     <section class="recent-activity">
       <div>
         <h1 class="title">Recentemente você buscou</h1>
@@ -174,7 +173,7 @@
 
       <div class="card-container">
         <div class="card">
-          <img src="card-images/ada-verde.webp" alt="Imagem Rio dos Cedros">
+          <img src="../images/card-images/ada-verde.webp" alt="Imagem Rio dos Cedros">
           <div class="card-content">
             <h3>Ada Verde</h3>
             <h4>Brasil, Rio dos Cedros</h4>
@@ -188,7 +187,7 @@
         </div>
 
         <div class="card">
-          <img src="card-images/wochenbrunner-chalets.webp" alt="Imagem Chalé Austria">
+          <img src="../images/card-images/wochenbrunner-chalets.webp" alt="Imagem Chalé Austria">
           <div class="card-content">
             <h3>Wochenbrunner Chalets</h3>
             <h4>Áustria, Ellmau</h4>
@@ -202,7 +201,7 @@
         </div>
 
         <div class="card">
-          <img src="card-images/hoton-sporthotel.webp" alt="Sporthotel na Bélgica">
+          <img src="../images/card-images/hoton-sporthotel.webp" alt="Sporthotel na Bélgica">
           <div class="card-content">
             <h3>Hotond Sporthotel</h3>
             <h4>Bélgica, Kluisbergen</h4>
@@ -216,7 +215,7 @@
         </div>
 
         <div class="card">
-          <img src="card-images/la-marquesa.webp" alt="Casa rural na Espanha">
+          <img src="../images/card-images/la-marquesa.webp" alt="Casa rural na Espanha">
           <div class="card-content">
             <h3>Casa Rural La Marquesa - Cuenca</h3>
             <h4>Espanha, Valera de Abajo</h4>
@@ -231,49 +230,49 @@
       </div>
     </section>
 
-    <section>
+    <section class="small-container">
       <div class="card-info">
         <h1 class="title">Conheça o Brasil</h1>
         <h2 class="subtitle">Estes destinos incríveis têm muito a oferecer</h2>
       </div>
       <div class="small-card-container">
         <div class="small-card">
-          <img src="small-card-images/campos-do-jordao.jpg" alt="Campos do Jordão">
+          <img src="../images/small-card-images/campos-do-jordao.jpg" alt="Campos do Jordão">
           <div class="card-content">
             <h3>Campos do Jordão</h3>
             <h4>881 acomodações</h4>
           </div>
         </div>
         <div class="small-card">
-          <img src="small-card-images/sao-paulo.jpg" alt="São Paulo">
+          <img src="../images/small-card-images/sao-paulo.jpg" alt="São Paulo">
           <div class="card-content">
             <h3>São Paulo</h3>
             <h4>2.653 acomodações</h4>
           </div>
         </div>
         <div class="small-card">
-          <img src="small-card-images/rio-de-janeiro.jpg" alt="Rio de Janeiro">
+          <img src="../images/small-card-images/rio-de-janeiro.jpg" alt="Rio de Janeiro">
           <div class="card-content">
             <h3>Rio de Janeiro</h3>
             <h4>5.002 acomodações</h4>
           </div>
         </div>
         <div class="small-card">
-          <img src="small-card-images/porto-de-galinhas.jpg" alt="Porto de Galinhas">
+          <img src="../images/small-card-images/porto-de-galinhas.jpg" alt="Porto de Galinhas">
           <div class="card-content">
             <h3>Porto de Galinhas</h3>
             <h4>1.406 acomodações</h4>
           </div>
         </div>
         <div class="small-card">
-          <img src="small-card-images/monte-verde.jpg" alt="monte-verde">
+          <img src="../images/small-card-images/monte-verde.jpg" alt="monte-verde">
           <div class="card-content">
             <h3>Monte Verde</h3>
             <h4>363 acomodações</h4>
           </div>
         </div>
         <div class="small-card">
-          <img src="small-card-images/ubatuba.jpg" alt="Ubatuba">
+          <img src="../images/small-card-images/ubatuba.jpg" alt="Ubatuba">
           <div class="card-content">
             <h3>Ubatuba</h3>
             <h4>2.255 acomodações</h4>
@@ -283,6 +282,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer id="footer">
     <div class="footer-email-subscription">
       <div class="text-container">
@@ -313,7 +313,7 @@
 
 
   <!-- Script includes -->
-  <script src="sidebar.js"></script>
-  <script src="popup.js"></script>
+  <script src="../js/popup.js"></script>
+  <script src="../js/sidebar.js"></script>
 </body>
 </html>

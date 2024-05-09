@@ -5,5 +5,11 @@ marquee {
 marquee img {
   width: 150px;
   margin-right: 80px;
+  margin-left: 40px;
   cursor: pointer;
+}
+
+
+marquee img:last-child {
+  margin-right: 20px;
 }

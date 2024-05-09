@@ -33,7 +33,7 @@ a {text-decoration: none; cursor: pointer;}
   z-index: 10;
   background-color: var(--gray-color);
 }
-
+  
 .header-list {
   display: flex;
   align-items: center;
@@ -46,18 +46,24 @@ a {text-decoration: none; cursor: pointer;}
 }
 
 .header li,
-.header a {
-  margin-right: 15px;
+.header a,
+.header .profile-picture {
+  margin-right: 10px;
+}
+
+.profile-picture-container {
+  height: 45px;
+  width: 45px;
 }
 
 
-
-.list-item .brazil-container{
+.list-item .brazil-container {
   height: 30px;
   width: 30px;
 }
 
-.brazil-container .brazil-icon {
+.brazil-container .brazil-icon,
+.profile-picture {
   object-fit: cover;
   height: 100%;
   width: 100%;

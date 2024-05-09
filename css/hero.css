@@ -7,25 +7,31 @@
 }
 
 .hero-section {
-  background-image: url('img/praia.jpg');
+  background-image: url('../images/main/praia.jpg');
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 860px;
+  height: 900px;
   width: 100%;
-  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-section .hero-content {
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content:center;
   flex-direction: column;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .hero-section .hero-text-container {
-  position: absolute;
-  left: 24%;
-  top: 15%;
+  text-align: left;
+  margin-bottom: 50px;
 }
 
 .hero-text-container h1 {
@@ -44,17 +50,23 @@
   flex-direction: row;
   background-color: rgb(255, 183, 0);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 4px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .form-container input,
 .form-container button {
   color: var(--black-color);
   cursor: pointer;
-  width: 280px;
+  max-width: 280px;
+  min-width: 20;
   height: 52px;
-  margin-right: 2px;
-  border-radius: 30px;
+  margin-top: 2px solid;
+  border-radius: 10px;
   border: none;
+  padding: 0px 30px;
+  margin-right: 5px;
 }
 
 .form-container button {
@@ -64,17 +76,6 @@
   color: var(--white-color);
 }
 
-.searchbox-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1035px;
-  height: 65px;
-  border-radius: 56px;
-  position: absolute;
-  bottom: 40%;
-}
-
 .searchbox-container .form-container {
   font-family: var(--titulo-font);
   color: var(--gray-color);
@@ -82,7 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: row;  
 }
 
 .form-container .input-with-icon {
@@ -99,9 +100,6 @@
 }
 
 .hero-section .promotion-text {
-  position: absolute;
-  bottom: 35%;
-  left: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,3 +141,40 @@
   padding-left: 35px;
 }
 
+@media (max-width: 813px) {
+  .hero-section .form-container {
+    flex-direction: column;
+  }
+  .form-container .date-container {
+    flex-direction: column;
+  }
+  .date-container input,
+  .form-container button  {
+    width: 100%;
+    padding: 0px 50px;
+  }
+  .form-container button {
+    padding: 0 50px;
+  }
+  .form-container .date-container input:first-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .form-container .date-container input:last-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  marquee {
+    display: none;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #main {
+    text-align: left;
+    margin-left: 50px;
+  }
+}
